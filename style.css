@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.blurred{
+    filter: blur(8px); 
+    pointer-events: none;
+}
+
+#header {
+    background: #975d88;
+    color: white;
+    padding: 1.5%;
+    font-size: 3.2vw;
+}
+.projects {
+       width: 80%; 
+       padding: 5px 0; 
+}
+
+#list{
+    height:max-content;
+    display:flex;
+    justify-content: space-between;
+    padding: 1% 4%;
+    width:100%;
+    border-radius: 5px;
+    background-color:rgb(241, 234, 223) ;
+}
+
+#list > p{
+  font-size: 1.1rem;
+}
+
+#list > #leftTask{
+    font-size: 1.2rem;
+    display: flex;
+    gap:2vw;
+}
+
+
+#list > #rightTask{
+   display: flex;
+   gap: 3vw;
+}
+#rightTask > button{
+    padding: 4% 5%;
+    border-radius: 4px;
+   background-color: transparent;
+}
+#rightTask > #cancel{
+    background-color: #ff4d4d;
+    color:white;
+    border:none;
+    padding:3% 8%;
+}
+
+#taskContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rightContainer > button{
+    padding:2px;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+h3{
+    font-size: 2rem;
+}
+.projects h3 {
+    margin: 0; 
+    padding: 0;
+    font-size: 2rem;
+}
+#addProjects{
+    margin-left: 30%;;
+    cursor: pointer;
+}
+#container>#left {
+    width: 25%;
+    background:rgb(241, 234, 223);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width:80%;
+}
+
+.menu button {
+    background: #f0f0f0;
+    border-color: transparent;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#addTask{
+  border-radius: 100%;
+  font-size: 1.5rem;
+  height: 3vw;
+  width: 3vw;
+  background: #975d88;
+  color: white;
+  border-color: transparent;
+}
+
+#container>#right {
+    width: 75%;
+    flex-grow: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#right>span{
+    color:#975d88;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#taskForm{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1vw;
+}
+
+#newProject,#taskBox,#details{
+    padding: 1%;
+    text-align: center;
+    background: #F5F5DC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position : absolute;
+    height:auto;
+    width:20vw;
+    margin-top: 20%;
+    margin-left:45%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1vw; 
+   
+    border-radius: 10px;
+}
+
+#details > p {
+    font-size : 1.5 vw;
+    font-weight: bold;
+}
+
+#newProject input,#taskBox input,#taskBox textarea,#taskBox select {
+    width: 90%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#newProject button,#taskBox button,#details button {
+    padding: 3% 4%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0.5vw 0; 
+}
+
+.button-container {
+    display: flex; 
+    width:90%;
+    justify-content: space-evenly;
+}
+#all{
+    background: #f0f0f0; 
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    width: 100%; 
+    max-width: 300px;
+}
+
+#projectDiv {
+    background:#f0f0f0;
+    padding: 5px;
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+#projectDiv span {
+    font-weight: bold;
+    flex-grow: 1; 
+    text-align: left;
+    padding-right: 15px; 
+}
+
+#projectDiv button {
+    background-color: #ff4d4d; 
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+}
+
+#projectDiv button:hover {
+    background-color: #ff1a1a; 
+}
